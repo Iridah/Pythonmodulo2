@@ -1,0 +1,99 @@
+/* ------------------------------------------- */
+/* 1. DISEÑO FIJO Y CENTRADO (960 PX) */
+/* ------------------------------------------- */
+#contenedor {
+    width: 960px; 
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 10px; /* Espacio interior para que el contenido no toque los bordes */
+    /* Para el ejemplo: se añade un borde ligero */
+    border: 1px solid #ddd; 
+}
+
+/* ------------------------------------------- */
+/* 2. ENCABEZADO CENTRADO */
+/* ------------------------------------------- */
+h1 {
+    text-align: center;
+    border-bottom: 2px solid #333; /* Línea de separación visual */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------------------- */
+/* 3. ESTRUCTURA DE DOS COLUMNAS (Flexbox - EL 110%) */
+/* ------------------------------------------- */
+#contenido-principal {
+    display: flex; /* Activa el layout flexible */
+    justify-content: space-between; /* Distribuye el espacio entre las columnas */
+    margin-bottom: 20px;
+}
+
+#columna-izquierda {
+    width: 260px; /* Ancho fijo */
+    /* Añadimos un color de fondo para visualizar el área de la columna */
+    background-color: #f7f7f7; 
+    padding: 15px;
+}
+
+#columna-derecha {
+    width: 680px; /* 960px (total) - 260px (izquierda) - 20px (gap) = 680px, ajustando para padding si es necesario */
+    padding: 15px;
+}
+
+
+/* ------------------------------------------- */
+/* 4. LISTA DE CONTENIDO A TRES COLUMNAS */
+/* ------------------------------------------- */
+#lista-tres-columnas {
+    /* Propiedad clave: divide el contenido en N columnas */
+    column-count: 3;
+    column-gap: 20px; /* Espacio entre las columnas */
+    padding-left: 20px; /* Ajuste para el padding por defecto de las listas */
+}
+
+#lista-tres-columnas li {
+    margin-bottom: 8px; /* Espacio vertical entre los ítems */
+}
+
+/* Estilos de Tipografía y otros */
+h2 {
+    color: #0056b3;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* ------------------------------------------- */
+/* 🆕 5. FOOTER PERSONALIZADO Y CORREGIDO */
+/* ------------------------------------------- */
+footer {
+    background-color: #000000; 
+    border-top: none; 
+    padding: 15px 0;
+}
+
+#footer-text {
+    /* 🆕 Color de texto blanco (CORRECCIÓN CLAVE) */
+    color: white; 
+    
+    /* 🆕 IMPLEMENTACIÓN DE LA FUENTE JURA */
+    font-family: 'Jura', sans-serif;
+    
+    /* Requisito de centrado (antes estaba en el HTML inline) */
+    text-align: center;
+    
+    margin: 0; 
+    font-size: 0.9em;
+}
+
+/* ------------------------------------------- */
+/* 6. FUENTE GENERAL */
+/* ------------------------------------------- */
+body {
+    /* Usamos una fuente genérica si no queremos forzar Jura a todo el body */
+    font-family: sans-serif; 
+}

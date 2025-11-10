@@ -1,0 +1,10 @@
+body {
+    background-color: lightblue !important;
+    margin: 0;
+    padding-bottom: 90px;
+}
+footer {
+    width: 100vw;
+    left: 0;
+}
+

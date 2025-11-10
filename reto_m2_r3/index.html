@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto L3: Layout Fijo</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="contenedor">
+        
+        <header>
+            <h1>Datos del libro</h1>
+        </header>
+
+        <section id="contenido-principal">
+            
+            <aside id="columna-izquierda">
+                <h2>HTML & CSS: Curso práctico avanzado</h2>
+                
+                <p><strong>Autor:</strong> Juan José García, Juan Pérez</p>
+                <p><strong>Editorial:</strong> Libros Web</p>
+                <p><strong>Año de publicación:</strong> 2024</p>
+                <p><strong>Páginas:</strong> 520</p>
+                <p><strong>ISBN:</strong> 978-84-000000-0-0</p>
+                
+                <img src="portada-libro.jpg" alt="Portada del Libro" style="width: 100%; height: auto; margin-top: 15px;">
+
+            </aside>
+            
+            <article id="columna-derecha">
+                <h2>Descripción del libro</h2>
+                <p>
+                    Este es un texto de ejemplo para la descripción del libro, asegurando que el contenido sea lo 
+                    suficientemente largo como para ocupar el espacio de la columna derecha (700px) y demostrar que 
+                    el diseño de dos columnas funciona correctamente.
+                    El libro se centra en técnicas avanzadas de maquetación y diseño.
+                </p>
+                <p>
+                    El objetivo principal es llevar al lector de un nivel intermedio a un nivel avanzado en el 
+                    uso de HTML5 y CSS3, cubriendo temas como Flexbox, Grid y Animaciones.
+                </p>
+            </article>
+
+        </section> <section id="contenido-libro">
+            <h2>Contenido del libro</h2>
+            <p>El contenido de este libro se estructura en tres apartados bien diferenciados:</p>
+            
+            <ul id="lista-tres-columnas">
+                <li>En la primera parte se cubre la semántica de HTML5, la accesibilidad y las nuevas etiquetas estructurales.</li>
+                <li>En la segunda parte, se abordan las propiedades avanzadas de CSS3, transformaciones y transiciones.</li>
+                <li>En la tercera y última parte, se estudian las técnicas de maquetación responsive, el uso de Flexbox, Grid Layout y la optimización de rendimiento.</li>
+                <li>Módulo adicional: Fundamentos de Git y control de versiones.</li>
+                <li>Módulo extra: Introducción a la arquitectura de APIs REST.</li>
+                <li>Módulo final: Técnicas de Testing Front-End.</li>
+            </ul>
+        </section>
+
+    <div id="contenedor">
+        <footer>
+            <p id="footer-text">© 2025 Vacadari Desarrollos. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>
