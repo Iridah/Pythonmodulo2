@@ -1,0 +1,59 @@
+/* ------------------------------------------- */
+/* 5. FOOTER PERSONALIZADO Y CORREGIDO         */
+/* ------------------------------------------- */
+
+footer {
+    background-color: #000000; 
+    padding: 15px 0;
+}
+
+/* Aumentamos la especificidad usando 'footer p.footer__texto' */
+/* Esto le dice al navegador que esta regla es más importante que una regla simple */
+footer p.footer__texto {
+    /* Color de texto blanco*/
+    color: white; 
+
+    /* Implementación de la fuente Jura */
+    font-family: 'Jura', sans-serif;
+
+    text-align: center;
+    margin: 0; 
+    font-size: 0.9em;
+}
+
+/* ------------------------------------------- */
+/* 🆕 6. PERSONALIZACIÓN DE NAVBAR NAVIDEÑO    */
+/* ------------------------------------------- */
+
+/* 1. Fondo del Navbar (Rojo Navideño Fuerte) */
+.navbar-custom {
+    background-color: #A32828; /* Rojo Oscuro Navideño */
+}
+
+/* 2. Color del Texto y Enlaces (Alto Contraste: Blanco) */
+/* Sobrescribe todos los elementos de navegación: enlaces, título, etc. */
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-toggler-icon {
+    color: white; /* Blanco puro o un blanco muy claro */
+}
+
+/* 3. Color del Botón de Login (Verde Navideño como Acento) */
+.navbar-custom .btn-outline-success {
+    color: #006400;       /* Texto: Verde Oscuro */
+    border-color: #006400; /* Borde: Verde Oscuro */
+}
+
+/* 4. Efecto Hover (El toque de acento Verde) */
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+    color: #4CAF50; /* Verde más claro al pasar el mouse */
+}
+
+/* ------------------------------------------- */
+/* COMPLEMENTOS DE BOOTSTRAP */
+/* ------------------------------------------- */
+/* Ajuste del Jumbotron para mejor apariencia */
+header {
+    background-color: #f8f9fa !important; /* Color gris muy claro */
+}
